@@ -1,4 +1,4 @@
-import { Ship, AlertTriangle, Calendar, Activity } from 'lucide-react';
+import { AlertTriangle, Calendar, Activity } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { ResumoNavio } from '@/lib/types';
 
@@ -34,8 +34,8 @@ export const SummaryCards = ({ resumo }: SummaryCardsProps) => {
 
       <Card className="p-6 border-l-4 border-l-info">
         <div className="flex items-center justify-between mb-3">
-          <div className="w-12 h-12 rounded-lg bg-info/10 flex items-center justify-center">
-            <Ship className="w-6 h-6 text-info" />
+          <div className="w-20 h-20 rounded-lg bg-info/10 flex items-center justify-center">
+            <img src="/logo.png" alt="NORMAM" className="w-[72px] h-[72px] object-contain" />
           </div>
         </div>
         <h3 className="text-sm font-medium text-muted-foreground mb-1">Nível NORMAM 401</h3>

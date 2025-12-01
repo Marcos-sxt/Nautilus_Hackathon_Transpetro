@@ -7,7 +7,7 @@ import { NavioInput, PreverResponse, ProcessedData } from '@/lib/types';
 import { parseCsvFile } from '@/lib/parseCsv';
 import { processAllRows } from '@/lib/callApi';
 import { useToast } from '@/hooks/use-toast';
-import { Loader2, Ship, ArrowRight } from 'lucide-react';
+import { Loader2, ArrowRight } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 import { Card } from '@/components/ui/card';
 
@@ -98,7 +98,7 @@ const Upload = () => {
         {/* Header */}
         <div className="mb-12 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Ship className="w-12 h-12 text-primary" />
+            <img src="/logo.png" alt="Nautilus Logo" className="w-36 h-36 object-contain" />
             <h1 className="text-5xl font-bold">Nautilus</h1>
           </div>
           <p className="text-xl text-muted-foreground">Maritime Biofouling Prediction System</p>

@@ -90,14 +90,30 @@ export const ApiResultCharts = ({ previsoes }: ApiResultChartsProps) => {
 };
 
 function getNivelNumerico(nivel: string): number {
+  // Aceita tanto "0", "1", "2", "3", "4" quanto "Nível 0", "Nível 1", etc.
+  const nivelStr = nivel.toString().trim();
+  
+  // Se for apenas número
+  if (/^\d+$/.test(nivelStr)) {
+    return parseInt(nivelStr, 10);
+  }
+  
+  // Se for formato "Nível X"
   const nivelMap: { [key: string]: number } = {
-    'Nível 0': 0,
-    'Nível 1': 1,
-    'Nível 2': 2,
-    'Nível 3': 3,
-    'Nível 4': 4,
+    'nível 0': 0,
+    'nível 1': 1,
+    'nível 2': 2,
+    'nível 3': 3,
+    'nível 4': 4,
+    'nivel 0': 0,
+    'nivel 1': 1,
+    'nivel 2': 2,
+    'nivel 3': 3,
+    'nivel 4': 4,
   };
-  return nivelMap[nivel] ?? 0;
+  
+  const nivelLower = nivelStr.toLowerCase();
+  return nivelMap[nivelLower] ?? parseInt(nivelStr, 10) ?? 0;
 }
 
 function getNivelTexto(valor: number): string {

@@ -5,7 +5,7 @@ import { SummaryCards } from '@/components/SummaryCards';
 import { ApiResultCharts } from '@/components/ApiResultCharts';
 import { DetailedTable } from '@/components/DetailedTable';
 import { Button } from '@/components/ui/button';
-import { Ship, Upload, Download } from 'lucide-react';
+import { Upload, Download } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
@@ -57,7 +57,7 @@ const Results = () => {
         {/* Header */}
         <div className="mb-8 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Ship className="w-10 h-10 text-primary" />
+            <img src="/logo.png" alt="Nautilus Logo" className="w-[120px] h-[120px] object-contain" />
             <div>
               <h1 className="text-4xl font-bold">Nautilus Dashboard</h1>
               <p className="text-muted-foreground">Maritime biofouling prediction analysis</p>
