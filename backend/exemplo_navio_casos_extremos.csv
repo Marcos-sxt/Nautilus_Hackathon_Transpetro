@@ -1,0 +1,7 @@
+distance,duration,draft_medio,velocidade_media,consumo_total,consumo_por_milha,dias_desde_docagem,dias_parado_acumulado,draft_ratio,consumo_medio_30d,distancia_90d,ano,mes,trimestre
+25.0,0.5,8.5,10.0,150,6.00,30,5,0.65,180,1500,2025,1,1
+75.5,2.5,11.5,13.5,450,5.96,350,120,0.95,420,8500,2025,6,2
+15.2,0.3,7.8,8.5,80,5.26,15,2,0.55,120,800,2025,1,1
+90.3,3.0,12.0,14.0,520,5.76,400,150,1.00,480,9500,2025,7,3
+35.8,0.8,9.2,11.0,200,5.59,100,40,0.70,220,2800,2025,3,1
+
