@@ -1,11 +1,7 @@
 import { NavioInput, PreverResponse, BackendPreverResponse } from './types';
 import { transformBackendResponse } from './transformResponse';
 
-const API_URL = import.meta.env.VITE_API_URL;
-
-if (!API_URL) {
-  throw new Error('VITE_API_URL environment variable is not defined');
-}
+const API_URL = 'http://35.192.46.221:8000/prever';
 
 export const callPredictionApi = async (data: NavioInput): Promise<PreverResponse> => {
   try {
