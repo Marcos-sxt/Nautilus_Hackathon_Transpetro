@@ -1,7 +1,9 @@
 import { NavioInput, PreverResponse, BackendPreverResponse } from './types';
 import { transformBackendResponse } from './transformResponse';
 
-const API_URL = 'http://35.192.46.221:8000/prever';
+// Usar proxy serverless do Vercel para evitar Mixed Content (HTTPS -> HTTP)
+// O proxy está em /api/prever.js e faz a requisição HTTP server-side
+const API_URL = '/api/prever';
 
 export const callPredictionApi = async (data: NavioInput): Promise<PreverResponse> => {
   try {
